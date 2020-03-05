@@ -40,11 +40,11 @@ int main()
 		} else if (x == 4){
 			helper->handleUnequipSelection(inventory);
 		} else if (x == 5) {
-			cout << "Do you really want to quit? Y/N" << endl;
+			cout << "Do you really want to quit? y/n" << endl;
 			
 			string confirmation;
 			getline(cin, confirmation);
-			if ("Y" == confirmation) {
+			if ("y" == confirmation || "yes" == confirmation) {
 				delete helper;
 				delete inventory;
 				return 0;
