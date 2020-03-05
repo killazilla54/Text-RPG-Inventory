@@ -163,7 +163,7 @@ void InventoryDemoHelper::handlePrintLoadout(Inventory* inventory)
 		cout << NONE << endl;
 	}
 	Item* leftHandSlot = inventory->getItemInSlot("leftHand");
-	cout << "Legs: ";
+	cout << "Left Hand: ";
 	if (leftHandSlot != nullptr) {
 		cout << leftHandSlot->printItemStats() << endl;
 		attackRating += leftHandSlot->getAttack();
